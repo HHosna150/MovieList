@@ -1,19 +1,22 @@
+/* Global styles */
+* {
+  color: white; /* Default text color for all elements */
+}
+
+/* Styles for movie image */
 .movie-image {
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease; /* Smooth transition for filter property */
 }
 
 .movie-image:hover {
-  filter: brightness(0.7); /* Adjust the brightness to make it darker */
+  filter: brightness(0.7); /* Darken the image on hover */
 }
 
-* {
-  color: white;
-}
-
+/* Styles for add button */
 #add-btn {
   width: 4rem;
   height: auto;
   margin: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem; /* Reduced margin for better spacing */
   padding: 0;
 }
