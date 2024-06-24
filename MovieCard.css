@@ -1,0 +1,19 @@
+.movie-image {
+  transition: filter 0.3s ease;
+}
+
+.movie-image:hover {
+  filter: brightness(0.7); /* Adjust the brightness to make it darker */
+}
+
+* {
+  color: white;
+}
+
+#add-btn {
+  width: 4rem;
+  height: auto;
+  margin: 0;
+  margin-bottom: 4rem;
+  padding: 0;
+}

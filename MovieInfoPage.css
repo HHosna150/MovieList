@@ -1,0 +1,36 @@
+.nav-container {
+  padding-left: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  background-color: #5b2e99;
+}
+
+#nv-logo {
+  color: white;
+  background-color: #010101;
+  width: 5rem;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.b-wrapper {
+  background-color: #5b2e99;
+}
+
+.scroll {
+  max-width: 200px;
+  overflow-x: auto;
+}
+
+.cast-container {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scrollbar-color: transparent transparent;
+  user-select: none;
+}
+
+.cast-container::-webkit-scrollbar {
+  height: 200px;
+}

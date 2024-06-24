@@ -1,0 +1,21 @@
+.btn {
+  width: 6rem;
+  background-color: #171717;
+  color: white;
+  border: none;
+  text-align: center;
+  margin: 2rem;
+}
+
+.btn:hover {
+  background-color: #171717;
+}
+
+.text-wrapper {
+  width: fit-content;
+  min-height: 100%;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 2rem;
+}

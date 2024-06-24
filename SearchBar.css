@@ -1,0 +1,30 @@
+.input-wrapper {
+  background-color: #171717;
+  width: auto;
+  border-radius: 20px;
+  height: 2.5rem;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  color: white;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  width: auto;
+  text-align: justify;
+  color: white;
+  background-color: #171717;
+}
