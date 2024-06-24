@@ -1,10 +1,11 @@
 import axios from "axios";
 import { MovieCard } from "../dtos/MovieDto.js";
 
-export const getSearchMovie = async (page, query) => {
-  const data = [];
+export const getSearchMovie = async (pageNum, searchTerm) => {
+  const movieList = [];
 
   try {
+    // Fetch movies matching the search query
     const response = await axios.get(
       "https://api.themoviedb.org/3/search/movie",
       {
@@ -14,21 +15,21 @@ export const getSearchMovie = async (page, query) => {
         },
         params: {
           language: "en-US",
-          query: query,
-          page: page,
+          query: searchTerm,
+          page: pageNum,
         },
       }
     );
 
-    /* Data Cleaning */
+    /* Clean and structure fetched data */
     const { results, total_pages } = response.data;
 
-    results.map((movie) => {
-      data.push(new MovieCard(movie.title, movie.poster_path, movie.id));
+    results.forEach((movie) => {
+      movieList.push(new MovieCard(movie.title, movie.poster_path, movie.id));
     });
 
-    return { movies: data, total_pages: total_pages };
-  } catch (e) {
-    throw e;
+    return { movies: movieList, total_pages: total_pages };
+  } catch (error) {
+    throw error;
   }
 };
