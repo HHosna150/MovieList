@@ -1,16 +1,16 @@
-# Starry Night Movie List Web Application
+# Movie List Web Application
 
 ## Overview
 
-The Starry Night Movie List Application is a web-based platform designed for movie enthusiasts to explore, search, and save their favorite films. It leverages modern web technologies for both frontend and backend development, offering a seamless user experience. The application utilizes React.js for the frontend to provide dynamic user interfaces and Express.js for the backend to handle data management.
+The Movie List Application is a web-based platform designed for movie enthusiasts to explore, search, and save their favorite films. It leverages modern web technologies for both frontend and backend development, offering a seamless user experience. The application utilizes React.js for the frontend to provide dynamic user interfaces and Express.js for the backend to handle data management.
 
 ## Features
 
-- CRUD Operations:** Manage movie data stored in a local MySQL database.
-- Detailed Views:** View comprehensive details about each movie.
-- Favorites:** Save preferred movies to a favorites list.
-- Search Functionality:** Search for specific movies by title or genre.
-- Pagination:** Navigate through pages of movie listings using React Router.
+- CRUD Operations:Manage movie data stored in a local MySQL database.
+- Detailed Views:View comprehensive details about each movie.
+- Favorites:Save preferred movies to a favorites list.
+- Search Functionality:Search for specific movies by title or genre.
+- Pagination:Navigate through pages of movie listings using React Router.
 
 ## Project Background
 
