@@ -1,46 +1,39 @@
-# Movie List Web-Application
+# Starry Night Movie Application
 
-## Description
+## Overview
 
-_Starry Night_ Movie List Application is a web-based platform aimed at movie enthusiasts to browse, search, and save their favorite movies. It utilizes React.js for the front-end development and Express.js for the backend. The application employs CRUD operations to manage movie data stored in a local MySQL database. Key features include the ability to view movie details, add movies to favorites, search for movies, and navigate between pages using React Router.
-It is a full-stack web application that utilizes modern JavaScript frameworks and libraries.
+The _Starry Night_ Movie Application is a web-based platform designed for movie enthusiasts to explore, search, and save their favorite films. Built with React.js for the front end and Express.js for the backend, this application leverages CRUD operations to manage movie data stored in a local MySQL database. Users can view detailed information about movies, add movies to their favorites list, perform searches, and navigate between pages using React Router. This full-stack application incorporates modern JavaScript frameworks and libraries.
 
-## About this project
+## Project Background
 
-This project was developed as part of Open Avenues' Build Projects program, mentored by Michael Danaher.
+This project was created as part of the Open Avenues' Build Projects program, under the guidance of mentor Michael Danaher.
 
-## Demo
+## Technology Stack
 
-https://github.com/yehtut-oo/movie-list-website/assets/161933910/ef6ff965-7272-45ba-b54c-3c52096d2cd0
-
-## Tech Stacks
-
-```
-Language
-└── JavaScript
-
-CSS
-├── Bootstrap
-└── React Bootstrap
-
-Frontend
-├── React.js
-├── React Router
-└── Axios
-
-Backend
-├── Express.js
-└── Node.js
-
-Database
-└── MySQL
-
-Others
-├── Concurrently
-├── CORS
-├── Dotenv
-├── Nodemon
-├── React Icons
-├── React Lazy Load Image Component
-└── React DOM
-```
+  ### Language
+  - JavaScript
+  
+  ### CSS
+  - Bootstrap
+  - React Bootstrap
+  
+  ### Frontend
+  - React.js
+  - React Router
+  - Axios
+  
+  ### Backend
+  - Express.js
+  - Node.js
+  
+  ### Database
+  - MySQL
+  
+  ### Additional Tools and Libraries
+  - Concurrently
+  - CORS
+  - Dotenv
+  - Nodemon
+  - React Icons
+  - React Lazy Load Image Component
+  - React DOM
