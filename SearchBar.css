@@ -1,30 +1,33 @@
 .input-wrapper {
-  background-color: #171717;
-  width: auto;
-  border-radius: 20px;
-  height: 2.5rem;
+  background-color: #1a1a1a; /* Darker background color */
+  width: 100%;
+  max-width: 400px; /* Adjust maximum width as needed */
+  border-radius: 10px; /* Rounded corners */
+  height: 2.8rem; /* Adjusted height */
   padding: 0 15px;
   display: flex;
   align-items: center;
+  margin: 0 auto; /* Center the input wrapper */
 }
 
 input {
-  color: white;
-  background-color: transparent;
+  color: #ffffff; /* White text color */
+  background-color: #1a1a1a; /* Dark background color */
   border: none;
   height: 100%;
   width: 100%;
-  font-size: 1.25rem;
-  margin-left: 1rem;
+  font-size: 1.2rem; /* Slightly reduced font size */
+  padding: 0; /* Remove default padding */
+  margin-left: 10px; /* Increased left margin */
+  outline: none; /* Remove focus outline */
 }
 
-input:focus {
-  outline: none;
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder text color with opacity */
 }
 
 #search-icon {
-  width: auto;
-  text-align: justify;
-  color: white;
-  background-color: #171717;
+  color: #ffffff; /* White icon color */
+  font-size: 1.5rem; /* Larger icon size */
+  margin-right: 10px; /* Increased right margin */
 }
