@@ -9,16 +9,14 @@ const BookmarkPage = () => {
 
   useEffect(() => {
     fetchMovies();
-  }, []);
+  }, []); // Empty dependency array ensures fetchMovies is called only once on component mount
 
-  const fetchMovies = async (page) => {
+  const fetchMovies = async () => {
     try {
       const response = await axios.get(`http://localhost:3000/user`);
-
-      const data = response.data;
-      setMovies(data);
-    } catch (e) {
-      console.error(e);
+      setMovies(response.data); // Directly set response data to movies state
+    } catch (error) {
+      console.error("Error fetching bookmarked movies:", error);
     }
   };
 
@@ -26,9 +24,9 @@ const BookmarkPage = () => {
     const url = `http://localhost:3000/movie/delete-movie/${id}`;
     try {
       await axios.delete(url);
-      fetchMovies();
-    } catch (err) {
-      console.error(err);
+      fetchMovies(); // Refresh movies after successful deletion
+    } catch (error) {
+      console.error("Error deleting bookmark:", error);
     }
   };
 
@@ -37,7 +35,7 @@ const BookmarkPage = () => {
       <NavigationBar />
 
       <Container fluid="md">
-        <Row xl={3} xxl={4}>
+        <Row xs={1} md={2} lg={3} xl={4} xxl={5} className="g-4">
           {movies.map((movie) => (
             <Col key={movie.movieId}>
               <BookmarkCard
