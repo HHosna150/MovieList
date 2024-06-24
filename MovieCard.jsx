@@ -67,13 +67,4 @@ const MovieCard = ({
 
 export default MovieCard;
 
-{
-  /* <Card.Img 
-    className="movie-image"
-    variant="top" 
-    src={`https://image.tmdb.org/t/p/original${path}`}
-    loading="lazy"
-    onLoadStart={() => setIsLoading(true)}
-    onLoadedData={() => setIsLoading(false)}
-    /> */
-}
+
